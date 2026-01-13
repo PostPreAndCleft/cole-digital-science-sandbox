@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seminars | Cole Digital Science Lab</title>
+    <meta name="description" content="Seminar series playlist and highlights." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">
+          <span class="brand-title">Cole Digital Science Lab</span>
+          <span class="brand-subtitle">Academic work in progress · <span data-current-year></span></span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="projects.html">Projects</a>
+          <a href="members.html">Members</a>
+          <a href="seminars.html" aria-current="page">Seminars</a>
+          <a href="cv.html">CV</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="fade-in">
+      <section>
+        <h1 class="hero-title">Friday Afternoon Reese Seminar series</h1>
+        <p class="section-intro">
+          From 2020 to 2025, the Friday Afternoon Reese Seminar series was a weekly seminar series hosted by Drs. Cole and Reese. In 2021, we included the Marine Biological Laboratory (MBL) Neuroimaging Seminar series. Below are examples of the recordings we made of research talks and discussions from the seminar series.
+        </p>
+      </section>
+
+      <section class="split stagger">
+        <article class="card">
+          <h2 class="section-title">Watch the playlist</h2>
+          <p>
+            View the full series on YouTube:
+            <a href="https://www.youtube.com/playlist?list=PLMqfTEXqhrXwVse_-Cklduawn2MToGYxr">Seminar series playlist</a>
+          </p>
+          <p class="hero-meta">Format: 30-60 minute talks · Updated periodically</p>
+        </article>
+        <article class="card">
+          <h2 class="section-title">Highlights</h2>
+          <p>
+            Topics include synaptic structure, imaging workflows, and computational approaches to microscopy.
+            Use this space to add featured talks, guest speakers, or upcoming sessions.
+          </p>
+        </article>
+      </section>
+
+      <section class="stagger" style="margin-top: 32px;">
+        <h2 class="section-title">Random picks</h2>
+        <p class="section-intro">Pull a fresh set of talks from the playlist for quick browsing.</p>
+        <div class="controls">
+          <label for="pick-count">Show</label>
+          <select id="pick-count">
+            <option value="4">4</option>
+            <option value="6" selected>6</option>
+          </select>
+          <button class="button" id="refresh-picks" type="button">Refresh picks</button>
+        </div>
+        <div class="video-grid" id="video-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© <span data-current-year></span> Cole Digital Science Lab</span>
+        <span>Built for GitHub Pages · Static only</span>
+      </div>
+    </footer>
+    <script src="assets/site.js"></script>
+    <script src="assets/fars_playlist_data.js"></script>
+    <script src="assets/seminars.js"></script>
+  </body>
+</html>

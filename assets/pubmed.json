@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-01-13T21:53:49.817103+00:00",
+  "query": "Cole AA[Author] AND (Reese TS[Author] OR synap*[Title/Abstract] OR vesicle*[Title/Abstract] OR \"electron tomography\"[Title/Abstract])",
+  "count": 4,
+  "items": [
+    {
+      "pmid": "37369583",
+      "title": "Transsynaptic Assemblies Link Domains of Presynaptic and Postsynaptic Intracellular Structures across the Synaptic Cleft.",
+      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "year": 2023,
+      "authors": [
+        "Cole AA",
+        "Reese TS"
+      ],
+      "doi": "10.1523/JNEUROSCI.2195-22.2023",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37369583/",
+      "pmc": "PMC10436760",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10436760/"
+    },
+    {
+      "pmid": "26985032",
+      "title": "A Network of Three Types of Filaments Organizes Synaptic Vesicles for Storage, Mobilization, and Docking.",
+      "journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "year": 2016,
+      "authors": [
+        "Cole AA",
+        "Chen X",
+        "Reese TS"
+      ],
+      "doi": "10.1523/JNEUROSCI.2939-15.2016",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26985032/",
+      "pmc": "PMC4792936",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4792936/"
+    },
+    {
+      "pmid": "26113817",
+      "title": "Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses.",
+      "journal": "Frontiers in synaptic neuroscience",
+      "year": 2015,
+      "authors": [
+        "High B",
+        "Cole AA",
+        "Chen X",
+        "Reese TS"
+      ],
+      "doi": "10.3389/fnsyn.2015.00009",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26113817/",
+      "pmc": "PMC4461817",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4461817/"
+    },
+    {
+      "pmid": "20148761",
+      "title": "Co-segregation of AMPA receptors with G(M1) ganglioside in synaptosomal membrane subfractions.",
+      "journal": "The Biochemical journal",
+      "year": 2010,
+      "authors": [
+        "Cole AA",
+        "Dosemeci A",
+        "Reese TS"
+      ],
+      "doi": "10.1042/BJ20091344",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20148761/",
+      "pmc": "PMC3119079",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3119079/"
+    }
+  ]
+}

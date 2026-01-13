@@ -1,2 +1,57 @@
 # cole-digital-science-sandbox
-Laboratory webpage for the future of cell biology research. 
+
+Temporary lab-style personal academic website, designed to be lightweight and easy to remove later.
+
+## Pages
+- `index.html` (Home)
+- `about.html`
+- `publications.html`
+- `projects.html`
+- `members.html`
+- `seminars.html`
+- `cv.html`
+- `contact.html`
+
+## Local preview
+Open `index.html` directly in a browser, or use a simple local server:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
+## GitHub Pages deployment
+1. Push this repo to GitHub.
+2. In the repo, go to **Settings → Pages**.
+3. Under **Build and deployment**, choose:
+   - Source: **Deploy from a branch**
+   - Branch: **main** (or `master`), folder **/ (root)**
+4. Click **Save**.
+5. Wait a minute for GitHub Pages to build. The site will be available at:
+   `https://<your-username>.github.io/<repo-name>/`
+
+## Customize
+- Update the placeholder text in each HTML file.
+- Replace placeholder DOIs, ORCID, and PDF links in `publications.html` and `cv.html`.
+- Edit the color palette in `assets/styles.css` (CSS variables at the top).
+
+## PubMed-synced publications
+This site can render a publications list from `assets/pubmed.json`.
+
+1. Run (requires network access):
+   ```bash
+   python3 scripts/fetch_pubmed.py --query 'Cole AA[Author]'
+   ```
+2. Refresh `publications.html` and the "PubMed list" section updates.
+
+Tip: If PubMed mixes in other “Cole” authors, use a more specific query (author initials, affiliations, keywords, or ORCID if you have one).
+In restricted environments (like this Codex session), you may need to approve network access before the script can contact NCBI.
+
+## Publication figure gallery
+Drop images you have permission to re-use into `assets/figures/` and list them in `assets/figures/figures.json`.
+
+If a paper is in PubMed Central under a Creative Commons license, you can also try `python3 scripts/fetch_pmc_figures.py --only-cc`.
+
+## License
+Content and code are provided under the CC0 license unless replaced with your own.

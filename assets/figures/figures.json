@@ -1,0 +1,11 @@
+{
+  "figures": [
+    {
+      "src": "assets/figures/26113817-fnsyn-07-00009-g0001.jpg",
+      "alt": "Figure from: Electron microscopic tomography reveals discrete transcleft elements at excitatory and inhibitory synapses.",
+      "caption": "(A) Virtual section through an excitatory synapse, including both pre- and postsynaptic elements and elements spanning the synaptic cleft. This is one of 80–100 serial virtual sections derived from the tomogram, so not every element in the tomogram is evident in every section. Cleft elements (white arrows in successive virtual section were segmented one by one). The yellow oblique arrow indicates one structure that happened to cross the cleft in this virtual section. The cleft was considered to end at the white asterisks, and only elements crossing the cleft were rendered. (B) Surface rendering of the single element in the synaptic cleft indicated by yellow arrow in (A). (C) Three dimensional rendering of all elements spanning the cleft. Various colors code the different structural types of cleft element. The same color-coding is used in Figure 2. Docked vesicles in the presynaptic active zone are in red. Scale bars: (A) 50 nm; (B) 10 nm; (C) 50 nm. Virtual section in (A) is 1.4 nm thick.",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4461817/",
+      "credit": "License: http://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
