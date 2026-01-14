@@ -105,4 +105,3 @@
   loadFigures();
   loadPublications();
 })();
-

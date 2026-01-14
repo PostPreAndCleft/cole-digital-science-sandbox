@@ -240,6 +240,177 @@ main {
   background: rgba(255, 255, 255, 0.03);
 }
 
+.carousel {
+  margin-top: 40px;
+}
+
+.carousel-frame {
+  position: relative;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow);
+}
+
+.carousel-media {
+  display: block;
+}
+
+.carousel-image {
+  width: 100%;
+  height: min(520px, 55vh);
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.05);
+}
+
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: end;
+  gap: 14px;
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(7, 10, 19, 0.15) 0%, rgba(7, 10, 19, 0.86) 70%, rgba(7, 10, 19, 0.92) 100%);
+}
+
+.carousel-kicker {
+  margin: 0;
+  font-family: var(--mono);
+  color: var(--muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.carousel-year {
+  color: rgba(34, 211, 238, 0.85);
+}
+
+.carousel-title {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+  letter-spacing: -0.02em;
+  max-width: 52rem;
+}
+
+.carousel-takeaway {
+  margin: 0;
+  max-width: 52rem;
+  color: rgba(226, 232, 240, 0.86);
+}
+
+.carousel-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.carousel-link {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 211, 238, 0.38);
+  background: rgba(34, 211, 238, 0.08);
+  color: var(--text);
+}
+
+.carousel-link:hover,
+.carousel-link:focus-visible {
+  background: rgba(34, 211, 238, 0.14);
+  text-decoration: none;
+}
+
+.carousel-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.carousel-button {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: var(--mono);
+  cursor: pointer;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.carousel-dot[aria-current="true"] {
+  background: rgba(34, 211, 238, 0.8);
+  border-color: rgba(34, 211, 238, 0.92);
+}
+
+.project-card {
+  display: grid;
+  gap: 12px;
+}
+
+.project-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  background: radial-gradient(38px circle at 30% 25%, rgba(79, 70, 229, 0.24), transparent 60%),
+    radial-gradient(34px circle at 70% 65%, rgba(34, 211, 238, 0.18), transparent 58%),
+    rgba(255, 255, 255, 0.02);
+  display: grid;
+  place-items: center;
+  color: rgba(226, 232, 240, 0.9);
+  flex: 0 0 auto;
+}
+
+.project-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+@media (max-width: 720px) {
+  .carousel-image {
+    height: min(520px, 65vh);
+  }
+
+  .carousel-actions {
+    align-items: stretch;
+  }
+}
+
 .list-item h3 {
   margin: 0 0 8px;
   font-family: var(--display);

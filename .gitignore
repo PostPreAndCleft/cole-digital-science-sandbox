@@ -1,6 +1,13 @@
-.DS_Store
-.DS_Store?
-**/.DS_Store
-
-# Private application materials (do not publish)
+# Private / source materials (do not publish)
 references/
+
+# Local environments / OS cruft
+.venv/
+__pycache__/
+.DS_Store
+
+# Optional local experiments (keep out of commits)
+assets/figures/*-opart*.png
+assets/figures/*-bio-abstract*.png
+assets/figures/*-neoplastic*.png
+

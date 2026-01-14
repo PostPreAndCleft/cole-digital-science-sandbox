@@ -21,6 +21,12 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+If port `8000` is unavailable (common in restricted environments), pick another port, for example:
+
+```bash
+python3 -m http.server 8085
+```
+
 ## GitHub Pages deployment
 1. Push this repo to GitHub.
 2. In the repo, go to **Settings → Pages**.
@@ -52,6 +58,15 @@ In restricted environments (like this Codex session), you may need to approve ne
 Drop images you have permission to re-use into `assets/figures/` and list them in `assets/figures/figures.json`.
 
 If a paper is in PubMed Central under a Creative Commons license, you can also try `python3 scripts/fetch_pmc_figures.py --only-cc`.
+
+## Project status (return here)
+- Current state: full static site scaffold is live with a homepage publication carousel, seminar playlist randomizer, and a publication figure gallery.
+- Content workflow:
+  - Figures: update `assets/figures/figures.json` and add/remove images in `assets/figures/`.
+  - Carousel: edit featured paper takeaways in `assets/featured_publications_data.js`.
+  - Seminars: update `assets/fars_playlist_data.js` (generated from CSVs) and `assets/seminars.js` for UI.
+  - Publications: update `assets/pubmed.json` (optionally via `scripts/fetch_pubmed.py`).
+- Publishing checklist: keep `references/` private (it is ignored by `.gitignore`).
 
 ## License
 Content and code are provided under the CC0 license unless replaced with your own.
