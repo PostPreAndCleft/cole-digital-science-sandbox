@@ -3,11 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cole Digital Science Lab | Home</title>
-    <meta name="description" content="Temporary lab-style personal academic site for research updates, publications, and contact." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+    <title>Andy A. Cole, Ph.D.</title>
+    <meta name="description" content="Synaptic neuroscientist using electron tomography to map nanoscale structures that underlie learning and memory." />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
@@ -15,15 +12,14 @@
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <div class="brand">
-          <span class="brand-title">Cole Digital Science Lab</span>
-          <span class="brand-subtitle">Academic work in progress · <span data-current-year></span></span>
+          <span class="brand-title">Andy A. Cole, Ph.D.</span>
+          <span class="brand-subtitle">Synaptic Neuroscience</span>
         </div>
         <div class="nav-links">
           <a href="index.html" aria-current="page">Home</a>
           <a href="about.html">About</a>
           <a href="publications.html">Publications</a>
-          <a href="projects.html">Projects</a>
-          <a href="members.html">Members</a>
+          <a href="projects.html">Research</a>
           <a href="seminars.html">Seminars</a>
           <a href="cv.html">CV</a>
           <a href="contact.html">Contact</a>
@@ -31,114 +27,80 @@
       </nav>
     </header>
 
-    <main id="main" class="fade-in">
-      <section class="hero">
-        <div class="hero-card">
-          <p class="pill">Lab-style personal site · temporary + lightweight</p>
-          <h1 class="hero-title">Mapping the nanoscale architecture of synapses with electron tomography.</h1>
-          <p class="hero-meta">Synaptic ultrastructure · structural cell biology · electron tomography</p>
-          <p>
-            This site captures a streamlined view of my research program, publications, and lab-building plans.
-          </p>
-        </div>
-        <div class="hero-card">
-          <h2 class="section-title">Current focus</h2>
-          <p class="section-intro">
-            I study how nanoscale synaptic structures coordinate signaling and plasticity. My work blends electron
-            tomography, light microscopy, and open-source analysis tools to reveal functional architectures.
-          </p>
-          <div>
-            <span class="tag">Electron tomography</span>
-            <span class="tag">Synaptic assemblies</span>
-            <span class="tag">Open-source tools</span>
-            <span class="tag">Machine-learning analysis</span>
-          </div>
-        </div>
-      </section>
+    <main id="main">
+      <div class="hero-intro">
+        <h1 class="page-title">Mapping synaptic architecture at the nanoscale</h1>
+        <p>
+          I study how nanoscale structures at synapses enable the brain to form memories that persist for decades.
+          Using electron tomography, I reveal the hidden organizational strategies&mdash;tethers, scaffolds, and
+          assemblies&mdash;that allow synapses to achieve the balance of flexibility and stability required for
+          learning and memory.
+        </p>
+        <p>
+          My work identifies the structural "handles" biology uses to control nanoscale processes,
+          and examines how their disruption may contribute to Alzheimer's disease and related disorders.
+        </p>
+      </div>
 
-      <section id="featured-carousel" class="carousel" aria-label="Selected publication highlights">
-        <div class="carousel-frame">
-          <a class="carousel-media" data-carousel-link href="https://pubmed.ncbi.nlm.nih.gov/37369583/">
-            <img
-              class="carousel-image"
-              data-carousel-image
-              src="assets/figures/SN-JNSJ230415F001.jpg"
-              alt="Electron tomography figure illustrating transsynaptic assemblies spanning the synaptic cleft."
-              loading="lazy"
-            />
-          </a>
-          <div class="carousel-overlay">
-            <p class="carousel-kicker">Publication highlight <span class="carousel-year" data-carousel-year>2023</span></p>
-            <h2 class="carousel-title" data-carousel-title>Transsynaptic assemblies across the synaptic cleft</h2>
-            <p class="carousel-takeaway" data-carousel-takeaway>
-              Transsynaptic assemblies provide a structural route for coupling presynaptic machinery to postsynaptic receptor domains.
+      <section class="section">
+        <h2 class="section-title">Research focus</h2>
+        <div class="split">
+          <div class="card">
+            <h3>Transsynaptic assemblies</h3>
+            <p class="muted">
+              Mapping synapse-spanning structures that link presynaptic machinery to postsynaptic receptor domains,
+              using electron tomography and molecular labeling to understand how assemblies coordinate synaptic function.
             </p>
-            <div class="carousel-actions">
-              <a class="carousel-link" data-carousel-link href="https://pubmed.ncbi.nlm.nih.gov/37369583/">Open on PubMed →</a>
-              <div class="carousel-buttons" role="group" aria-label="Carousel controls">
-                <button class="carousel-button" type="button" data-carousel-prev>Previous</button>
-                <button class="carousel-button" type="button" data-carousel-next>Next</button>
-                <button class="carousel-button" type="button" data-carousel-pause aria-pressed="false">Pause</button>
-              </div>
-            </div>
-            <div class="carousel-dots" data-carousel-indicators aria-label="Select a publication highlight"></div>
+          </div>
+          <div class="card">
+            <h3>Open analysis tools</h3>
+            <p class="muted">
+              Developing scalable, open-source software for tomographic analysis. Collaborating with the Harris Lab
+              to extend WebKnossos for nanoscale structure discovery across imaging modalities.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="stagger">
-        <h2 class="section-title">Quick links</h2>
-        <p class="section-intro">Start here if you want a snapshot of recent work or how to connect.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>About</h3>
-            <p>Background, research lens, and the collaborators shaping this work.</p>
-            <p><a href="about.html">Read the overview →</a></p>
-          </article>
-          <article class="card">
-            <h3>Publications</h3>
-            <p>Featured papers, links to DOIs, and PDFs or preprints when available.</p>
-            <p><a href="publications.html">Browse publications →</a></p>
-          </article>
-          <article class="card">
-            <h3>Projects</h3>
-            <p>Active initiatives on synapse architecture and tomographic analysis tooling.</p>
-            <p><a href="projects.html">Explore projects →</a></p>
-          </article>
-          <article class="card">
-            <h3>Contact</h3>
-            <p>How to reach me for research conversations, speaking, or collaboration.</p>
-            <p><a href="contact.html">Get in touch →</a></p>
-          </article>
-        </div>
+      <section class="section">
+        <h2 class="section-title">Background</h2>
+        <p class="section-intro">
+          Ph.D. in Neuroscience from Northwestern University. Postdoctoral training at NINDS in the
+          Structural Cell Biology Section under Thomas S. Reese. I have led seminar series at the
+          Marine Biological Laboratory and NINDS, and managed a 7-person team developing advanced
+          segmentation software.
+        </p>
+        <p><a href="about.html">More about my background &rarr;</a></p>
       </section>
 
-      <section class="split" style="margin-top: 40px;">
-        <div class="callout">
-          <h2 class="section-title">Lab-style updates</h2>
-          <p>
-            <strong>Now:</strong> Advancing tomographic analysis workflows and mapping transsynaptic assemblies across
-            activity states.
-          </p>
-        </div>
-        <div class="callout">
-          <h2 class="section-title">Need a quick CV?</h2>
-          <p>
-            A printable CV is available for conference or grant use. It will stay brief while this site is temporary.
-          </p>
-          <p><a href="cv.html">View the CV overview →</a></p>
+      <section class="section">
+        <div class="quick-links">
+          <a href="publications.html" class="quick-link">
+            <h3>Publications</h3>
+            <p>Peer-reviewed papers on synaptic ultrastructure</p>
+          </a>
+          <a href="projects.html" class="quick-link">
+            <h3>Research</h3>
+            <p>Current projects and future directions</p>
+          </a>
+          <a href="seminars.html" class="quick-link">
+            <h3>Seminars</h3>
+            <p>Curated talks on structural cell biology</p>
+          </a>
+          <a href="contact.html" class="quick-link">
+            <h3>Contact</h3>
+            <p>Collaborations and inquiries</p>
+          </a>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="footer-inner">
-        <span>© <span data-current-year></span> Cole Digital Science Lab</span>
-        <span>Built for GitHub Pages · Static only</span>
+        <span>&copy; <span data-current-year></span> Andy A. Cole</span>
+        <span>cole.andy.a@gmail.com</span>
       </div>
     </footer>
     <script src="assets/site.js"></script>
-    <script src="assets/featured_publications_data.js"></script>
-    <script src="assets/featured.js"></script>
   </body>
 </html>
