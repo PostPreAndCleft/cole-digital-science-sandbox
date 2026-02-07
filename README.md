@@ -7,10 +7,21 @@ Temporary lab-style personal academic website, designed to be lightweight and ea
 - `about.html`
 - `publications.html`
 - `projects.html`
-- `members.html`
 - `seminars.html`
 - `cv.html`
 - `contact.html`
+
+Note: A `members.html` page is planned but not included yet.
+
+## Archives
+To capture static snapshots (and keep a Git tag), use:
+
+```bash
+python3 scripts/archive_pages.py --pages linkedin.html --label job
+git tag -a job-2026-02-07 -m "Job-specific snapshot"
+```
+
+Snapshots are saved under `archives/` with link rewrites so they work from that folder.
 
 ## Local preview
 Open `index.html` directly in a browser, or use a simple local server:
